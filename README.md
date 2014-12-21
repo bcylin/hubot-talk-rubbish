@@ -28,7 +28,7 @@ Add the repository to your Hubot's `package.json`:
 
 ```json
 dependencies: {
-  "hubot-talk-rubbish": "git://github.com/bcylin/hubot-talk-rubbish.git"
+  "hubot-talk-rubbish": "git://github.com/bcylin/hubot-talk-rubbish.git#develop"
 }
 ```
 
