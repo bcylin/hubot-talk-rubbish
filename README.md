@@ -9,6 +9,13 @@ A Hubot script package for fun
 
 See `src/talk-rubbish.coffee` for full documentation.
 
+### Run Hubot locally
+
+```sh
+npm install
+rake hubot
+```
+
 ### Run tests
 
 ```sh
@@ -16,6 +23,22 @@ npm test
 ```
 
 ## Installation
+
+Add the repository to your Hubot's `package.json`:
+
+```json
+dependencies: {
+  "hubot-talk-rubbish": "git://github.com/bcylin/hubot-talk-rubbish.git"
+}
+```
+
+Include the package in your Hubot's `external-scripts.json`:
+
+```json
+[
+  "hubot-talk-rubbish"
+]
+```
 
 ## Directory Structure
 
