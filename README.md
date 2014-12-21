@@ -1,8 +1,21 @@
-# Hubot Example
+hubot-talk-rubbish
+==================
 
-An example script package for Hubot
+A Hubot script package for fun
 
-[![Build Status](https://travis-ci.org/hubot-scripts/hubot-example.png)](https://travis-ci.org/hubot-scripts/hubot-example)
+[![Build Status](https://travis-ci.org/bcylin/hubot-talk-rubbish.svg)](https://travis-ci.org/bcylin/hubot-talk-rubbish)
+
+## Development
+
+See `src/talk-rubbish.coffee` for full documentation.
+
+### Run tests
+
+```sh
+npm test
+```
+
+## Installation
 
 ## Directory Structure
 
@@ -24,12 +37,3 @@ This directory is home to the actual hubot scripts in the package. Your
 
 This directory is home to any tests you write for your scripts. This example
 package uses Mocha, Chai and Sinon to manage writing tests.
-
-## Advantages of Building a Package
-
-Some of the advantages of building an npm package for your hubot script(s) are:
-
-* You don't need to rely on when hubot-scripts package is released.
-* You can specify dependencies in the `package.json` rather than have users
-  manually specify them
-* You can easily add tests using your favourite frameworks and libraries
