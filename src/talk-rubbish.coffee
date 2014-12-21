@@ -29,7 +29,10 @@ module.exports = (robot) ->
     robot.brain.remove "hubot_phrases_said"
     msg.send "I have dumped rubbish!"
 
-  triggers = process.env.HUBOT_RUBBISH_TRIGGERS ? ["talk rubbish"]
+  triggers = ["talk rubbish"]
+  try
+    more = JSON.parse process.env.HUBOT_RUBBISH_TRIGGERS
+    triggers = triggers.concat more if more.length > 0
   regex = new RegExp triggers.join("|"), "i"
 
   randomPhrase = () ->
@@ -61,7 +64,7 @@ module.exports = (robot) ->
     robot.http(url)
       .get() (err, res, body) ->
         try
-          newList = JSON.parse(body)
+          newList = JSON.parse body
           robot.brain.set "hubot_rubbish_phrases", newList
         catch e
           console.log "#{e.message} from #{url}"
