@@ -1,22 +1,22 @@
 {
-  "name": "hubot-example",
-  "description": "An example script package for Hubot",
-  "version": "1.0.0",
-  "author": "Tom Bell <tomb@tomb.io>",
+  "name": "hubot-talk-rubbish",
+  "description": "Polydice Hubot Hackathon 2014. A side toy project.",
+  "version": "0.1.0",
+  "author": "bcylin <bcylin@gmail.com>",
   "license": "MIT",
 
   "keywords": [
     "hubot",
-    "hubot-scripts"
+    "talk"
   ],
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-example.git"
+    "url": "git://github.com/bcylin/hubot-talk-rubbish.git"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-example/issues"
+    "url": "https://github.com/bcylin/hubot-talk-rubbish/issues"
   },
 
   "dependencies": {
