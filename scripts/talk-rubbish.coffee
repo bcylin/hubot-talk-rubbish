@@ -1,0 +1,1 @@
+../src/talk-rubbish.coffee
