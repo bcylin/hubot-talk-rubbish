@@ -20,6 +20,9 @@ Array.prototype.diff = (arr) ->
   this.filter (item) ->
     arr.indexOf(item) < 0
 
+Array.prototype.random = ->
+  this[Math.floor(Math.random() * this.length)]
+
 module.exports = (robot) ->
   robot.hear /afk/i, (msg) ->
     msg.send "Bye!"
@@ -44,7 +47,7 @@ module.exports = (robot) ->
       else if said.length >= list.length
         said = [] # reset said items
 
-      phrase = msg.random(list.diff(said))
+      phrase = list.diff(said).random()
       if phrase?
         said.push phrase
         robot.brain.set "hubot_phrases_said", said
