@@ -24,6 +24,7 @@
   },
 
   "devDependencies": {
+    "coffee-script": "~1.6",
     "hubot": "^2.10.0",
     "hubot-help": "*",
     "mocha": "*",
